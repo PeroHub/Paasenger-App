@@ -3,6 +3,7 @@ let countEl = document.getElementById("count-el")
 let count = 0
 
 function increment() {
+    // Increment count
     count += 1
     countEl.textContent = count
 }
@@ -10,6 +11,7 @@ function increment() {
 function save() {
     let countStr = count + " - "
     saveEl.textContent += countStr
+    // Resetting count and countEl content
     countEl.textContent = 0
     count = 0
 }
